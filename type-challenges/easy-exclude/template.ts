@@ -15,7 +15,7 @@ interface IResponse {
   type t2 = extractKey<IResponse, "index">;
   
   // js
-  function MyExclude(T, U: any[]) {
+  function MyExclude(T : unknown [], U: any[]) {
     const result = [];
     for (let i = 0; i < T.length; i++) {
       const t = T[i];
