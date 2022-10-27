@@ -81,3 +81,4 @@
  type Test0 = { a: 10 } extends Tmp<infer A> // infer A 只能是 number 类型
      ? OnlyNumber<A> // 不报错
      : never;
+
